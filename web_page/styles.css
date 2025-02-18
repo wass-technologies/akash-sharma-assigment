@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family:"IBM Plex Sans";
+}
+
+.container{
+    max-width: 1285px;
+    margin: auto;
+    position: relative;
+    
+}
+
+/* navbar */
+
+.navbar{
+    width: 100%;
+    height: auto;
+    background-color: #03045E;
+
+}
+
+.topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+}
+
+.topbar h2{
+    color: #FFFFFF;
+    display: inline;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:xx-large;
+}
+
+.topbar button{
+    background-color: #03045E;
+    color: #FFFFFF;
+    border: 1px solid #E7F0F7;
+    width: 150px;
+    height: auto;
+    padding: 12px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.helpbtm{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar2 {
+    height: auto;
+    background-color: #E7F0F7;
+}
+
+.btmbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.leftpart{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+}
+
+.rightpart{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+}
+
+.btmbar a{
+    text-decoration: none;
+    color: #4B4B4B;
+}
+
+/* hero section */
+
+.banner{
+    background-image:url("images/Rectangle\ 55.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.Ellipse{
+    display: inline;
+    position: absolute;
+}
+
+.hero_contents{
+    display: flex;
+}
+
+.para_section {
+    display: flex;
+    flex-direction: column;
+    padding: 9.3% 0;
+    gap: 20px; ;
+}
+
+.para_section h2{
+    color: #FFFFFF;
+    font-size: 3em;
+}
+
+.para_section p{
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+/* for mobile view */
+
+@media(max-width:400px){
+
+    .container{
+        width: 300px;
+    }
+
+    .topbar{
+        padding: 5px 0;
+    }
+
+    .topbar h2{
+        display: inline;
+        font-weight: 100;
+        font-size: large;
+    }
+
+    .topbar button{
+        background-color: #03045E;
+        color: #FFFFFF;
+        border: 1px solid #E7F0F7;
+        width: 60px;
+        height: auto;
+        padding: 8px 0px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 0.5em;
+    }
+
+    .btmbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px;
+    }
+
+    .btmbar a{
+        font-size: 0.5em;
+    }
+
+    .rightpart{
+        gap: 17px;
+    }
+
+    .leftpart{
+        gap: 17px;
+    }
+    
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+    .Ellipse{
+        display: none;
+    }
+
+    .para_section {
+        padding: 3% 0;
+        gap: 5px; ;
+    }
+
+    .para_section h2{
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+
+    .para_section p{
+        color: #FFFFFF;
+        font-size: 6px;
+    }
+
+    .images_section img{
+        width: 200px;
+    }
+
+}
