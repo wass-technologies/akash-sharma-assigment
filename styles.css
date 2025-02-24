@@ -46,6 +46,15 @@
     font-weight: 500;
     font-style: normal;
     font-size: 2.5em;
+
+}
+
+.logo_heading{
+    transition: transform 0.5s ease-in-out;;
+}
+
+.logo_heading:hover{
+    transform: scale(1.2);
 }
 
 .topbar button{
@@ -122,6 +131,41 @@
     font-size: large;
 }
 
+.home:hover{
+    text-decoration: underline;
+    transform: scale(0.8);
+}
+
+.home{
+    transition:all 0.2s ease-in-out;
+}
+
+.about:hover{
+    text-decoration: underline;
+    transform: scale(0.8);
+}
+
+.about{
+    transition:all 0.2s ease-in-out;
+}
+
+.contact:hover{
+    text-decoration: underline;
+    transform: scale(0.8);
+}
+
+.contact{
+    transition:all 0.2s ease-in-out;
+}
+
+.services:hover{
+    text-decoration: underline;
+    transform: scale(0.8);
+}
+
+.services{
+    transition:all 0.2s ease-in-out;
+}
 /* hero section */
 
 .banner{
@@ -152,12 +196,34 @@
     font-size: 3em;
     font-weight:500;
     line-height: 0.5;
+    animation-name: slide_right;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide_right{
+    from{
+        transform:translateX(50%)
+    }
+
+    to{
+        transform:translateX(0%)
+    }
+}
 .para_section span{
     color: #FFFFFF;
     font-size: 3em;
     font-weight: 900;
+    animation-name: slide_right;
+    animation-duration: 3s;
+    animation-delay: 80ms;
+    animation-iteration-count: 1;
 }
 
 .para_section p{
@@ -165,6 +231,17 @@
     font-weight: 300;
     font-size: large;
     line-height: normal;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+}
+
+.images_section img{
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
 }
 
 /* our section */
@@ -438,8 +515,8 @@
     }
 
     .btmbar a{
-        font-size: 0.7em;
-        line-height: 15px;
+        font-size: 0.9em;
+        line-height: 1.2rem;
     }
 
     .rightpart{
@@ -477,13 +554,13 @@
     .para_section h2{
         text-align: center;
         color: #FFFFFF;
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     .para_section span{
         text-align: center;
         color: #FFFFFF;
-        font-size: 1.5em;
+        font-size: 1.7em;
         font-weight: 900;
     }
 
