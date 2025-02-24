@@ -262,6 +262,7 @@
     gap: 100px;
     width: 100%;
     height: auto;
+
 }
 
 .cardx{
@@ -270,6 +271,9 @@
     border: 3.5px solid #1D76EA;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation-name: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
 }
 
 .cardx:hover{
@@ -344,12 +348,18 @@
     font-size: 3em;
     font-weight:500;
     line-height: 0.5;
+    animation-name: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
 }
 
 .right span{
     color: #1D76EA;
     font-size: 3em;
     font-weight: 900;
+    animation-name: appear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
 }
 
 .right p{
@@ -357,6 +367,33 @@
     font-weight: 300;
     font-size: large;
     line-height: normal;
+}
+
+.left img{
+    animation: slide_left;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}
+
+@keyframes slide_left{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to{
+       opacity: 1;
+        scale: 1;
+    }
 }
 
 /* footer section */
