@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+.main{
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* navbar */
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.main nav{
+    width: 100vw;
+    height: auto;
+    padding: 20px 0;
+    /* background-color: aqua; */
+}
+
+.navbar{
+    display: flex;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    color: #ec1944;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0px 48px 0px 0px;
+}
+
+.leftnav{
+    display: flex;
+}
+
+.home{
+    padding: 0 12px;
+    font-size: 1rem;
+}
+
+.about{
+    padding: 0 12px;
+}
+
+.blog{
+    padding: 0 12px;
+}
+
+.page{
+    padding: 0 12px;
+}
+
+.contact{
+    padding: 0 12px;
+}
+
+.rightnav{
+    display: flex;
+    align-items: center;
+
+}
+
+.search{
+    padding: 0 25px;
+    font-size: 1.1em;
+    
+}
+
+.phone{
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #ec1944;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+.mode{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.mode i{
+    font-size: 1em;
+}
+
+.hamburger{
+    display: none;
+}
+
+/* for mobile view */
+
+@media screen and (max-width: 741px) and (min-width: 250px){
+
+
+    /* navbar */
+    .menu{
+        display: none;
+
+    }
+
+    .container{
+        width: 290px;
+        margin: auto;
+    }
+    .heading{
+        padding: 0%;
+        font-size: 1.9em;
+    }
+
+    .main nav{
+        padding: 12px 0;
+    }
+
+    .hamburger{
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+    }
+
+    .mode{
+        font-size: 1.7rem;
+    }
+}
+
+/* for tab view */
+
+@media screen and (max-width: 1387px) and (min-width: 742px){
+
+    /* navbar */
+    .menu{
+        display: none;
+
+    }
+
+    .container{
+        width: 720px;
+        margin: auto;
+        padding: 0 15px;
+        position: relative;
+    }
+    .heading{
+        font-size: 1.9em;
+    }
+
+    .main nav{
+        padding: 12px 0;
+    }
+
+    .hamburger{
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+        position: absolute;
+        right: 2%;
+        top: 20%;
+
+
+    }
+
+    .mode{
+        font-size: 1.7rem;
+        position: absolute;
+        right: 4%;
+        top: 20%;
+        
+    }
+
+}
