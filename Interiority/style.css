@@ -150,7 +150,7 @@
 
 /* for tab view */
 
-@media screen and (max-width: 1387px) and (min-width: 742px){
+@media screen and (max-width: 1017px) and (min-width: 742px){
 
     /* navbar */
     .menu{
@@ -191,4 +191,22 @@
         
     }
 
+}
+
+/* for small laptops */
+
+@media screen and (max-width: 1390px) and (min-width: 1018px){
+
+    .container{
+        width: 1000px;
+    }
+
+    .phone{
+        padding: 12px 30px;
+        font-size: 0.9rem;
+        background-color: #ec1944;
+        border-radius: 10px;
+        font-weight: 500;
+        color: white;
+    }
 }
