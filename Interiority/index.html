@@ -6,6 +6,12 @@
     <title>Interiority</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4ae004e2ef.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="main">
@@ -44,7 +50,110 @@
             </div>
         </nav>
             
+        <section class="owl-carousel owl-theme" id="banner_slider">
+            <div class="slide">
+                <div class="container">
+                    <div class="slide_contant">
+                        <p>We Create Space For Better Living</p>
+                        <div class="button_wrap">
+                            <a href="#" class="btn">View Our Project<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="slide slide_two">
+                <div class="container">
+                    <div class="slide_contant">
+                        <p>Modern And Unique Interior Design</p>
+                        <div class="button_wrap">
+                            <a href="#" class="btn">View Our Project<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide_three">
+                <div class="container">
+                    <div class="slide_contant">
+                        <p>We Create Space For Better Living</p>
+                        <div class="button_wrap">
+                            <a href="#" class="btn">View Our Project<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="slide slide_four">
+                <div class="container">
+                    <div class="slide_contant">
+                        <p>Modern And Unique Interior Design</p>
+                        <div class="button_wrap">
+                            <a href="#" class="btn">View Our Project<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="slide slide_five">
+                <div class="container">
+                    <div class="slide_contant">
+                        <p>We Create Space For Better Living</p>
+                        <div class="button_wrap">
+                            <a href="#" class="btn">View Our Project<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="slide slide_six">
+                <div class="container">
+                    <div class="slide_contant">
+                        <p>Modern And Unique Interior Design</p>
+                        <div class="button_wrap">
+                            <a href="#" class="btn">View Our Project<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script type="text/javascript">
+
+        
+        $(document).ready(function(){
+            $('#banner_slider').owlCarousel({
+                items:1,
+                nav:true,
+                navText:['<div class="slick-arrow prev"><span class="fa fa-angle-left"></span></div>','<div class="slick-arrow next"><span class="fa fa-angle-right"></span></div>'],
+                dots:true,
+                loop:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                mouseDrag:true,
+                smartSpeed: 3000,         
+            })
+        })
+        // $('.banner_slider').slick({
+        //     dots:true,
+        //     arrows:true,
+        //     Infinite:true,
+        //     speed:1000,
+        //     slidesToShow:1,
+        //     adaptiveHeight:true,
+        //     drag:true
+        // })
+    </script>
 </body>
 </html>
