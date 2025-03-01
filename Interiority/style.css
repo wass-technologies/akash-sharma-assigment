@@ -269,7 +269,141 @@
 
 }
 
+/* Features section */
 
+.features_section{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.features{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.features_text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.features_text p{
+    font-size: 1rem;
+    color: #ec1944;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.features_text p::before{
+    content: "";
+    width: 50px;
+    height: 1px; 
+    background-color: #ec1944; 
+    position: absolute;
+    left: 43%; 
+    top: 65%;
+}
+
+.features_text h3{
+    font-size: 2.5rem;
+    width: 65%;
+    margin: auto;
+    padding: 1rem 0 3rem 0;
+}
+
+.cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.features_cards{
+    width: 30%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* border:2px solid #ec1944; */
+    transition: all 0.4s ease;
+}
+
+.features_cards.sign_card .image{
+    background-color: #ec1944;
+}
+.features_cards.sign_card svg{
+    fill: white;
+}
+
+.features_cards svg{
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #ec1944;
+    transition: fill 0.3s ease;
+}
+
+.features_cards .image{
+    width: 120px;
+    height: 120px;
+    background-color: #F5F1F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    align-self: center;
+    transition: background-color 0.3s ease, transform 0.4s ease;
+}
+
+.features_cards:hover .image{
+    background-color: #ec1944;
+    transform:translateY(-5%);
+}
+
+
+.features_cards:hover svg{
+    fill: #F5F1F2;
+}
+
+.features_cards h4{
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.features_cards p{
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+
+.features_cards a{
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    transition:color 0.3s ease;
+}
+
+.features_cards a:hover{
+    color:#ec1944;
+}
+
+.features_cards i{
+    width: 2rem;
+    height: 2rem;
+    padding: 8.5px;
+    border-radius: 50%;
+    background-color:#ec1944;
+    margin: 0 10px;
+    color: white;
+
+    
+}
 /* for mobile view */
 
 @media screen and (max-width: 741px) and (min-width: 250px){
@@ -344,6 +478,48 @@
         
     }
     
+    /* features section */
+
+    .features_section{
+        padding: 3.5rem 0;
+    }
+    
+    .features_text p{
+        font-size: 1rem;
+        color: #ec1944;
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .features_text p::before{
+        left: 25%; 
+        top: 65%;
+    }
+    
+    .features_text h3{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    .cards{
+        width: 100%;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        
+    }
+    
+    .features_cards{
+        width: 100%;
+        
+    }
+    
+   
+    .features_cards h4{
+        font-size: 1.rem;
+    }
+    
+   
 
 }
 
@@ -410,6 +586,46 @@
         
     }
 
+    /* features section */
+
+    .features_section{
+        padding: 5rem 0;
+    }
+    
+    .features_text p{
+        font-size: 1rem;
+        color: #ec1944;
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .features_text p::before{
+        left: 38%; 
+        top: 65%;
+    }
+    
+    .features_text h3{
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .cards{
+        width: 100%;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        
+    }
+    
+    .features_cards{
+        width: 50%;
+        
+    }
+    
+    .features_cards h4{
+        font-size: 1.rem;
+    }
+
 }
 
 /* for small laptops */
@@ -427,5 +643,15 @@
         border-radius: 10px;
         font-weight: 500;
         color: white;
+    }
+
+    .features_text h3{
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    .features_text p::before{
+        left: 41%; 
+        top: 65%;
     }
 }
