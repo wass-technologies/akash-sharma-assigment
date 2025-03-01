@@ -62,12 +62,12 @@
 
 .leftnav{
     display: flex;
+    font-size: 0.9rem;
 }
 
 
 .home{
     padding: 0 12px;
-    font-size: 1rem;
 }
 
 .home:hover{
@@ -404,6 +404,114 @@
 
     
 }
+
+/* why us section */
+
+.banner_whyus{
+    background-color: #F5F1F2;
+    height: auto;
+}
+
+.why_contant{
+    display: flex;
+    padding: 7rem 0;
+}
+
+.why_text{
+    width: 50%;
+    height: auto;
+}
+
+.why_images{
+    width: 50%;
+    
+    height: auto;
+}
+
+.why_text p{
+    font-size: 0.9rem;
+    color: #ec1944;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    left: 13%;
+    padding-bottom: 1.7rem;
+}
+
+.why_text p::before{
+    content: "";
+    width: 50px;
+    height: 1px; 
+    background-color: #ec1944; 
+    position: absolute;
+    left: -12%; 
+    top: 34%;
+}
+
+.why_text h3{
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    padding-bottom: 1.7rem;
+}
+
+.why_text div{
+    font-weight: 300;
+    width: 85%;
+    padding-bottom: 2rem;
+    
+}
+
+.why_text a{
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #ec1944;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+.why_images{
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    
+}
+
+.image1{
+    grid-row: span 2;
+    padding-bottom: 2rem;
+}
+
+.image2{
+    padding-top: 1.5rem;
+}
+
+.image1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 /* for mobile view */
 
 @media screen and (max-width: 741px) and (min-width: 250px){
@@ -445,7 +553,11 @@
         font-weight: 500;
         line-height: 2.5rem;
         width: 100%;
-        padding: 6rem 0 2.5rem 0;
+        padding: 16rem 0 2.5rem 0;
+    }
+
+    .slide_contant{
+        height: 100vh;
     }
 
     .button_wrap a{
@@ -476,6 +588,10 @@
         width: 1.5rem;
         height: 1.5rem;
         
+    }
+
+    #banner_slider{
+        height: 95vh;
     }
     
     /* features section */
@@ -517,6 +633,12 @@
    
     .features_cards h4{
         font-size: 1.rem;
+    }
+
+    .why_contant{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7rem 0;
     }
     
    
@@ -573,6 +695,8 @@
         width: 100%;
         padding: 6rem 0 2.5rem 0;
     }
+
+    
 
     
 
