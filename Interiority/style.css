@@ -512,6 +512,98 @@
     border-radius: 10px;
 }
 
+/* our capabalities */
+
+.our_section{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.our_caps{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.our_text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.our_text p{
+    font-size: 1rem;
+    color: #ec1944;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    left: 2.5%;
+}
+
+.our_text p::before{
+    content: "";
+    width: 50px;
+    height: 1px; 
+    background-color: #ec1944; 
+    position: absolute;
+    left: 39%; 
+    top: 65%;
+}
+
+.our_text h3{
+    font-size: 2.5rem;
+    width: 65%;
+    margin: auto;
+    padding: 1rem 0 3rem 0;
+}
+
+.our_images{
+    display: flex;
+    width: 100%;
+}
+
+.our_cards{
+    width: 25%;
+    height:auto;
+    padding: 0 12px;
+}
+
+.our_img{
+    width: 100%;
+    height: 361px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0 ;
+    
+}
+
+.our_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.our_img img:hover{
+    transform: scale(1.15); 
+}
+
+.our_head{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 2px solid #ddd;
+    border-top: none;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 5px 12px  #ddd;
+}
 /* for mobile view */
 
 @media screen and (max-width: 741px) and (min-width: 250px){
@@ -635,14 +727,50 @@
         font-size: 1.rem;
     }
 
+    /* why us section */
+
     .why_contant{
         display: flex;
-        flex-wrap: wrap;
-        padding: 7rem 0;
+        padding: 3.5rem 0;
+        flex-direction: column;
     }
     
-   
-
+    .why_text{
+        width: 100%;
+    }
+    
+    .why_images{
+        width: 100%;
+        padding: 4rem 0 1.3rem 0;
+    }
+    
+    .why_text p{
+        left: 25%;
+        padding-bottom: 1.3rem;
+    }
+    
+    .why_text p::before{
+        left: -22%; 
+        top: 34%;
+    }
+    
+    .why_text h3{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding-bottom: 1.3rem;
+    }
+    
+    .why_text div{
+        font-weight: 300;
+        width: 85%;
+        padding-bottom: 2.5rem;
+        
+    }
+    
+    .why_text a{
+        padding: 12px 22px;
+        font-size: 1rem;
+    }
 }
 
 /* for tab view */
@@ -696,10 +824,6 @@
         padding: 6rem 0 2.5rem 0;
     }
 
-    
-
-    
-
     #banner_slider .slick-arrow.prev{
         left: 0%;
     
@@ -750,6 +874,46 @@
         font-size: 1.rem;
     }
 
+        /* why us section */
+
+    .why_contant{
+        display: flex;
+        padding: 4.5rem 0;
+        flex-direction: column;
+    }
+    
+    .why_text{
+        width: 100%;
+    }
+    
+    .why_images{
+        width: 100%;
+        padding: 4rem 0 1.3rem 0;
+    }
+    
+    .why_text p{
+        left: 9%;
+        padding-bottom: 1.3rem;
+    }
+    
+    .why_text p::before{
+        left: -9%; 
+        top: 34%;
+    }
+    
+    .why_text h3{
+        font-size: 1.8rem;
+    }
+    
+    .why_text div{
+        width: 95%;
+    }
+    
+    .why_text a{
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
 }
 
 /* for small laptops */
@@ -757,7 +921,7 @@
 @media screen and (max-width: 1390px) and (min-width: 1018px){
 
     .container{
-        width: 1000px;
+        width: 950px;
     }
 
     .phone{
@@ -777,5 +941,9 @@
     .features_text p::before{
         left: 41%; 
         top: 65%;
+    }
+
+    .why_text h3{
+        font-size: 1.9rem;
     }
 }
