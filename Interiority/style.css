@@ -454,10 +454,10 @@
     padding-bottom: 1.7rem;
 }
 
-.why_text div{
+.why_text .ttt{
     font-weight: 300;
     width: 85%;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     
 }
 
@@ -692,7 +692,6 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     row-gap: 1rem;
     column-gap: 1.5rem;
     
@@ -710,6 +709,45 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.counter_wrap{
+    display: flex;
+}
+
+.counter{
+    display: flex;
+}
+
+.c_image{
+    width: 60px;
+    height:60px;
+    background-color: #F5F1F2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c_image svg{
+    width: 26px;
+    height: 26px;   
+    fill: #ec1944;
+}
+
+.c_text{
+    padding: 0 1.2rem;
+}
+
+.c_text span{
+    font-size: 1.1rem;
+    color: #ec1944;
+    font-weight: 700;
+}
+
+.count{
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 /* for mobile view */
@@ -868,7 +906,7 @@
         padding-bottom: 1.3rem;
     }
     
-    .why_text div{
+    .why_text .ttt{
         font-weight: 300;
         width: 85%;
         padding-bottom: 2.5rem;
@@ -956,6 +994,24 @@
     
 }
 
+/* unique */
+.Unique{
+    width: 100%;
+}
+
+
+.counter{
+    display: flex;
+    flex-direction: column;
+}
+
+.c_image{
+    margin: 0 1.2rem;
+}
+
+.c_text{
+    padding-bottom: 4rem;
+}
 }
 
 /* for tab view */
@@ -1090,7 +1146,7 @@
         font-size: 1.8rem;
     }
     
-    .why_text div{
+    .why_text .ttt{
         width: 95%;
     }
     
@@ -1159,6 +1215,32 @@
     font-size: 25px;  
 }
 
+/* unoque */
+
+.Unique{
+    width: 100%;
+}
+
+
+.counter{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+}
+
+.c_image{
+    margin: 0 1.2rem;
+}
+
+.c_text{
+    padding-bottom: 4rem;
+}
+
+.count{
+    font-size: 2.5rem;
+}
+
 }
 
 /* for small laptops */
@@ -1223,5 +1305,13 @@
 
 .overlay i {
     font-size: 25px;  
+}
+
+.count{
+    font-size: 2.5rem;
+}
+
+.Unique{
+    height: 281px;
 }
 }
