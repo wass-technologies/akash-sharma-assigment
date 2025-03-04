@@ -759,7 +759,7 @@
 .our_updates_sections{
     width: 100%;
     height: auto;
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 .our_caps{
@@ -812,7 +812,7 @@
 }
 
 .interior p{
-    display:block;
+    
     background-color: #ec1944;
     color: white;
     width:fit-content ;
@@ -820,7 +820,7 @@
     font-size: 13px;
     font-weight: 600;
     border-radius: 4px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .admin{
@@ -852,6 +852,116 @@
     font-weight: 700;
     margin: 10px 0;
 
+}
+
+/* footer_section */
+
+.footer_section{
+    width: 100%;
+    height: auto;
+}
+
+.footer_banner{
+    background-color: #050003;
+    
+    padding: 5rem 0;
+}
+
+.footer_content p{
+    color: #ddd;
+    line-height: 2.2rem;
+    font-size: 0.85rem;
+}
+
+.footer_content h4{
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.int h4{
+    font-size: 1.8rem;
+    padding-bottom: 1.5rem;
+}
+
+.int p{
+    color: #ddd;
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.85rem;
+
+}
+
+.int i{
+    color:#ec1944;
+
+}
+
+.footer_content{
+    display: flex;
+    width: 100%;
+    column-gap: 5px;
+}
+
+.int_ser{
+    display: flex;
+    width: 50%;
+}
+
+.int{
+    width: 65%;
+    padding: 0 48px 0 12px;
+}
+
+.ser{
+    width: 35%;
+}
+
+.su_new{
+    display: flex;
+    width: 50%; 
+}
+
+.news{
+    width: 65%;
+}
+
+.sup{
+    width: 35%;
+}
+
+.last_footer p{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0 0rem 0;
+}
+
+.last_footer{
+    border-top:  solid rgb(221 221 221 / 17%)
+}
+
+.icon{
+    display: flex;
+    width: 100%;
+    padding: 3rem 0;
+    
+}
+
+.icons{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 7px;
+
+}
+
+.buuton input{
+    padding: 12px;
 }
 /* for mobile view */
 
@@ -1398,7 +1508,6 @@
 }
 
 .admin span{
-    
     padding-right: 10px;
 }
 
