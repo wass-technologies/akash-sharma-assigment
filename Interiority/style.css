@@ -785,7 +785,7 @@
 
 .our_upd{
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     overflow: hidden;
     position: relative;
     border-radius: 10px 10px 0 0 ;
@@ -809,18 +809,20 @@
     border-top: none;
     border-radius: 0px 0px 8px 8px;
     box-shadow: 0px 5px 12px  #ddd;
+    height: auto;
 }
 
-.interior p{
-    
+.interior{
+    width: fit-content;
     background-color: #ec1944;
-    color: white;
-    width:fit-content ;
-    padding: 5px 10px;
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 4px;
-    margin-bottom: 2rem;
+    padding: 2px 10px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem !important;
+}
+
+div.interior p {
+    font-size: 13px !important;
+    color: #fff;
 }
 
 .admin{
@@ -960,9 +962,31 @@
 
 }
 
-.buuton input{
-    padding: 12px;
+.button{
+    display: flex;
 }
+
+.button input{
+
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.send {
+    width: 60px;
+    height: 51px;
+    background-color: #ec1944;
+    margin-left: 10px;
+    border-radius: 8px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
 /* for mobile view */
 
 @media screen and (max-width: 741px) and (min-width: 250px){
@@ -1581,34 +1605,34 @@
 
     /* our gallery */
 
-.our_gallary_section{
+    .our_gallary_section{
     padding: 5rem 0;
-}
+    }
 
-.our_gallary{
+    .our_gallary{
     width: 294px;
     height: 196px;
-}
+    }   
 
-.overlay i {
+    .overlay i {
     font-size: 25px;  
-}
+    }
 
-.count{
+    .count{
     font-size: 2.5rem;
-}
+    }
 
-.Unique{
+    .Unique{
     height: 281px;
-}
+    }
 
-.our_uphead {
-    padding: 0 20px;
+    .our_uphead {
+    padding: 15px;
 
-}
+    }
 
-.interior p{
+    .interior p{
     font-size: 0.8rem;
-}
+    }
 
 }
