@@ -26,3 +26,5 @@ const observer = new IntersectionObserver((entries, observer) => {
 counts.forEach(counter => {
     observer.observe(counter);
 });
+
+
