@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Scroll event detected. Scroll position:", mainContainer.scrollTop);
 
         if (mainContainer.scrollTop > 80) {
-            heading.style.color = "#000"; // Change to black when scrolling down
+            heading.style.color = "#000"; 
         } else {
-            heading.style.color = "#ec1944"; // Change back to red when at top
+            heading.style.color = "#ec1944"; 
         }
     });
 });
@@ -57,6 +57,25 @@ const observer = new IntersectionObserver((entries, observer) => {
 // Attach observer to each counter element
 counts.forEach(counter => {
     observer.observe(counter);
+});
+
+
+// hamburger
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("active"); // Show/hide menu
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+            navMenu.classList.remove("active");
+        }
+    });
 });
 
 

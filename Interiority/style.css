@@ -58,7 +58,7 @@ nav{
     font-size: 28px;
     font-weight: 700;
     padding: 0px 48px 0px 0px;
-    transition: color 0.3s ease-in-out !important;
+    /* transition: color 0.3s ease-in !important; */
 }
 
 .leftnav{
@@ -1124,8 +1124,52 @@ div.interior p {
     /* navbar */
 
     .menu{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        right: 10px;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width:300px;
+        border-radius: 5px;
+        padding: 0.5rem 0 1rem 0;
 
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        visibility: hidden;
+        pointer-events: none; 
+
+        
+
+    }
+
+    .menu.active{
+        opacity: 1;
+
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .leftnav{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+    }
+
+    .aks{
+        padding: 0.5rem 0;
+    }
+
+    .phone{
+        padding: 12px 30px;
+        font-size: 0.8rem;
+        background-color: #ec1944;
+        border-radius: 10px;
+        font-weight: 500;
+        color: white;
     }
 
     .container{
@@ -1145,6 +1189,7 @@ div.interior p {
         display: flex;
         align-items: center;
         font-size: 1.7rem;
+        cursor: pointer;
     }
 
     .mode{
@@ -1175,28 +1220,8 @@ div.interior p {
         padding: 7px;
     }
 
-    #banner_slider .slick-arrow.prev{
-        left: 5%;
-    
-    }
-    
-    #banner_slider .slick-arrow.next{
-        right: 75%;
-        
-    }
-
-    #banner_slider .owl-dots .owl-dot span{
-        width: 10px;
-        height: 10px;
-        background-color:white;
-        opacity: 1;
-    }
-
-    #banner_slider .slick-arrow{
-        
-        width: 1.5rem;
-        height: 1.5rem;
-        
+    #banner_slider .owl-nav{
+        display: none;
     }
 
     #banner_slider{
