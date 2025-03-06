@@ -22,7 +22,7 @@ nav.dark{
     background-color: #111111;
 }
 
-.our_gallary_section{
+.our_gallary_section.dark{
     background-color: #111111;
 }
 
@@ -30,7 +30,11 @@ nav.dark{
     color: white;
 }
 
-.features.dark .features_cards h4, p{
+.features.dark .features_cards h4{
+    color: white;
+}
+
+.features.dark .features_cards p{
     color: white;
 }
 
@@ -42,19 +46,40 @@ nav.dark{
     color:#ec1944;
 }
 
-.why_text.dark h3, .ttt{
-    color: white;
-}
-
 .main.dark .our_text h3{
     color:white;
 }
+
 
 .main.dark .why_text h3{
     color: white;
 }
 
+.main.dark .ttt{
+    color: white;
+}
+
 .main.dark .count{
+    color: white;
+}
+
+.main.dark .our_head p{
+    color: white;
+}
+
+.main.dark .admin{
+    color: white;
+}
+
+.main.dark .admin span{
+    color: white;
+}
+
+.main.dark .date{
+    color: white;
+}
+
+.main.dark .our_uphead p{
     color: white;
 }
 
@@ -63,17 +88,17 @@ nav.dark{
 /* mobile view */
 
 @media screen and (max-width: 741px) and (min-width: 250px){
+    .leftnav.dark{
+        color: black;
+    }
 
 }
 
 /* tab view */
 
 @media screen and (max-width: 1017px) and (min-width: 742px){
-
-}
-
-/* small laptop view */
-
-@media screen and (max-width: 1390px) and (min-width: 1018px){
+    .leftnav.dark{
+        color: black;
+    }
 
 }

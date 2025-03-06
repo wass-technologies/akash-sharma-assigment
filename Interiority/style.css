@@ -624,7 +624,7 @@ nav{
     border: 2px solid #ddd;
     border-top: none;
     border-radius: 0px 0px 8px 8px;
-    box-shadow: 0px 5px 12px  #ddd;
+    /* box-shadow: 0px 5px 12px  #ddd; */
 }
 
 /* our gallery */
@@ -1163,11 +1163,26 @@ div.interior p {
     #cross{
         position: absolute;
         font-size: 2.5rem;
-        z-index: -10;
+        opacity: 0;
+        color: #ec1944;
+        z-index: -2;
     }
 
     #cross.active{
         position: absolute;
+        opacity: 1;
+        z-index: 2;
+    }
+
+    #line.active{
+        z-index: -2;
+        opacity: 0;
+    }
+
+    #line{
+        font-size: 2.1rem;
+        opacity: 1;
+        color: #ec1944;
         z-index: 2;
     }
 
@@ -1217,7 +1232,7 @@ div.interior p {
         justify-content: center;
         font-size: 1.4rem;
         cursor: pointer;
-        background-color: #ec1944;
+        /* background-color: #ec1944; */
         color: white;
         width: auto;
         height: 34px;
@@ -1226,7 +1241,6 @@ div.interior p {
         border-radius: 5px;
         
     }
-
     
 
     .mode{
@@ -1661,6 +1675,18 @@ div.interior p {
         pointer-events: auto;
     }
 
+    #cross{
+        position: absolute;
+        font-size: 2.5rem;
+        z-index: -10;
+        right: 0.5px;
+    }
+
+    #cross.active{
+        position: absolute;
+        z-index: 2;
+    }
+
     .leftnav{
         display: flex;
         flex-direction: column;
@@ -1707,8 +1733,8 @@ div.interior p {
     .mode{
         font-size: 1.7rem;
         position: absolute;
-        right: 4%;
-        top: 20%;
+        right: 8%;
+        top: 5%;
         
     }
 

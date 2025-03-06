@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.getElementById("nav-menu");
     const cross= document.getElementById("cross");
+    const line= document.getElementById("line");
     const moon= document.getElementById("moon");
     const nav = document.getElementById('nav');
     const leftNav = document.querySelector('.leftnav');
@@ -65,11 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const banner = document.querySelector('.banner_whyus') 
     const banner2 = document.querySelector('.our_gallary_section')
     const features= document.querySelector('.features')
-    const why= document.querySelector('.why_text')
+    
 
     hamburger.addEventListener("click", function () {
         navMenu.classList.toggle("active"); // Show/hide menu
         cross.classList.toggle("active");
+        line.classList.toggle("active");
+        hamburger.classList.toggle('active')
     });
 
     // Close menu when clicking outside
@@ -89,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
         banner.classList.toggle('dark')
         banner2.classList.toggle('dark')
         features.classList.toggle('dark')
-        why.classList.toggle('dark')
     });
 });
 
