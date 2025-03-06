@@ -1,0 +1,33 @@
+.leftnav.dark{
+    color: #fff;
+}
+
+nav.dark{
+    background-color:black;
+}
+
+.search.dark{
+    color: white;
+}
+
+#moon.dark{
+    opacity: 0;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 741px) and (min-width: 250px){
+
+}
+
+/* tab view */
+
+@media screen and (max-width: 1017px) and (min-width: 742px){
+
+}
+
+/* small laptop view */
+
+@media screen and (max-width: 1390px) and (min-width: 1018px){
+    
+}

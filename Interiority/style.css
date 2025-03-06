@@ -47,6 +47,8 @@ nav{
     z-index: 1000;
 }
 
+
+
 .navbar{
     display: flex;
 }
@@ -65,6 +67,7 @@ nav{
     display: flex;
     font-size: 0.9rem;
 }
+
 
 
 .home{
@@ -115,6 +118,12 @@ nav{
     
 }
 
+.search{
+    padding: 0 25px;
+    font-size: 1.1em;
+    
+}
+
 .phone{
     padding: 12px 30px;
     font-size: 1.2rem;
@@ -131,7 +140,16 @@ nav{
 }
 
 .mode i{
-    font-size: 1em;
+    font-size: 1.5em;
+}
+
+#moon{
+    z-index: 2;
+}
+
+#sun{
+    color: white;
+    position: absolute;
 }
 
 .hamburger{
@@ -1140,14 +1158,21 @@ div.interior p {
         transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
         visibility: hidden;
         pointer-events: none; 
+    }
 
-        
+    #cross{
+        position: absolute;
+        font-size: 2.5rem;
+        z-index: -10;
+    }
 
+    #cross.active{
+        position: absolute;
+        z-index: 2;
     }
 
     .menu.active{
         opacity: 1;
-
         transform: translateY(0);
         visibility: visible;
         pointer-events: auto;
@@ -1199,10 +1224,13 @@ div.interior p {
         padding: 0.5rem;
         margin-top: 4px;
         border-radius: 5px;
+        
     }
 
+    
+
     .mode{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         padding: 0 17px;
     }
 
@@ -1502,10 +1530,7 @@ div.interior p {
 
 /* footer_section */
 
-
-
 .footer_banner{
-   
     padding: 3rem 0;
 }
 
@@ -1535,9 +1560,7 @@ div.interior p {
 }
 
 .footer_content{
-  
     flex-wrap: wrap;
-   
 }
 
 .int_ser{
@@ -1586,25 +1609,17 @@ div.interior p {
 }
 
 .icons{
-    
     margin-right: 7px;
-
 }
 
-
-
 .button input{
-
     padding: 6px;
-    
     height: auto;
     margin-bottom: 5px;
 }
 
 .send {
-    
     height: auto;
-    
     margin-bottom: 5px;
 }
 

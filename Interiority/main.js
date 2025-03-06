@@ -1,30 +1,17 @@
-console.log("main.js loaded successfully");
-
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM fully loaded");
 
     const heading = document.querySelector(".heading");
     const mainContainer = document.querySelector(".main"); // Target the correct scrolling element
 
-    console.log("Heading element:", heading);
-    console.log("Main container:", mainContainer);
-
-    if (!heading) {
-        console.error("Heading element not found! Check your HTML structure.");
-        return;
-    }
-
-    if (!mainContainer) {
-        console.error("Main container not found! Check if .main exists.");
-        return;
-    }
-
     mainContainer.addEventListener("scroll", function () { // Attach scroll event to .main
-        console.log("Scroll event detected. Scroll position:", mainContainer.scrollTop);
-
+        
         if (mainContainer.scrollTop > 80) {
             heading.style.color = "#000"; 
-        } else {
+        } 
+        if(moon.click){
+            heading.style.color ="#fff"
+        }
+        else {
             heading.style.color = "#ec1944"; 
         }
     });
@@ -65,9 +52,15 @@ counts.forEach(counter => {
 document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.getElementById("nav-menu");
+    const cross= document.getElementById("cross");
+    const moon= document.getElementById("moon");
+    const nav = document.getElementById('nav');
+    const leftNav = document.querySelector('.leftnav');
+    const rightNav = document.querySelector('.search');   
 
     hamburger.addEventListener("click", function () {
         navMenu.classList.toggle("active"); // Show/hide menu
+        cross.classList.toggle("active");
     });
 
     // Close menu when clicking outside
@@ -76,7 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
             navMenu.classList.remove("active");
         }
     });
+
+    //mode change
+    moon.addEventListener("click", function () {
+        nav.classList.toggle('dark')
+        leftNav.classList.toggle('dark')
+        rightNav.classList.toggle('dark')
+        moon.classList.toggle('dark')
+    });
 });
-
-
 
