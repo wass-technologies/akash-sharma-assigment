@@ -3,7 +3,7 @@
 }
 
 nav.dark{
-    background-color:black;
+    background-color:#0a0a0a;
 }
 
 .search.dark{
@@ -13,6 +13,52 @@ nav.dark{
 #moon.dark{
     opacity: 0;
 }
+
+.main.dark{
+    background-color:#0a0a0a;
+}
+
+.banner_whyus.dark{
+    background-color: #111111;
+}
+
+.our_gallary_section{
+    background-color: #111111;
+}
+
+.features.dark .features_text h3{
+    color: white;
+}
+
+.features.dark .features_cards h4, p{
+    color: white;
+}
+
+.features.dark .features_cards a{
+    color: white;
+}
+
+.features.dark .features_cards a:hover{
+    color:#ec1944;
+}
+
+.why_text.dark h3, .ttt{
+    color: white;
+}
+
+.main.dark .our_text h3{
+    color:white;
+}
+
+.main.dark .why_text h3{
+    color: white;
+}
+
+.main.dark .count{
+    color: white;
+}
+
+
 
 /* mobile view */
 
@@ -29,5 +75,5 @@ nav.dark{
 /* small laptop view */
 
 @media screen and (max-width: 1390px) and (min-width: 1018px){
-    
+
 }
