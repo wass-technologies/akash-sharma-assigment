@@ -867,7 +867,6 @@ div.interior p {
 
 .footer_banner{
     background-color: #050003;
-    
     padding: 5rem 0;
 }
 
@@ -1184,17 +1183,27 @@ div.interior p {
 
     .main nav{
         padding: 12px 0;
+        align-items: center;
     }
 
     .hamburger{
         display: flex;
         align-items: center;
-        font-size: 1.7rem;
+        justify-content: center;
+        font-size: 1.4rem;
         cursor: pointer;
+        background-color: #ec1944;
+        color: white;
+        width: auto;
+        height: 34px;
+        padding: 0.5rem;
+        margin-top: 4px;
+        border-radius: 5px;
     }
 
     .mode{
         font-size: 1.7rem;
+        padding: 0 17px;
     }
 
     /* owl-carousel */
@@ -1491,6 +1500,114 @@ div.interior p {
     bottom:-25%;
 }
 
+/* footer_section */
+
+
+
+.footer_banner{
+   
+    padding: 3rem 0;
+}
+
+.footer_content p{
+    color: #ddd;
+    line-height: 1rem;
+    font-size: 0.6rem;
+}
+
+.footer_content h4{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.int h4{
+    font-size: 1.3rem;
+    padding-bottom: 1.2rem;
+}
+
+.int p{
+    color: #ddd;
+    line-height: 1.3rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem;
+
+}
+
+.footer_content{
+  
+    flex-wrap: wrap;
+   
+}
+
+.int_ser{
+    display: flex;
+    width: 100%;
+
+}
+
+.int{
+    width: 65%;
+   padding: 0 12px 0 0;
+}
+
+.ser{
+    width: 35%;
+}
+
+.su_new{
+    display: flex;
+    width: 100%; 
+}
+
+.news{
+    width: 65%;
+    padding-bottom: 1rem;
+}
+
+.sup{
+    width: 35%;
+}
+
+.last_footer p{
+    padding: 1.5rem 0 0rem 0;
+    font-size: 0.8rem;
+}
+
+.last_footer{
+    border-top:  solid rgb(221 221 221 / 17%)
+}
+
+.icon{
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+    
+}
+
+.icons{
+    
+    margin-right: 7px;
+
+}
+
+
+
+.button input{
+
+    padding: 6px;
+    
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.send {
+    
+    height: auto;
+    
+    margin-bottom: 5px;
+}
+
 }
 
 /* for tab view */
@@ -1499,8 +1616,44 @@ div.interior p {
 
     /* navbar */
     .menu{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 72px;
+        right: 10px;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width:97%;
+        border-radius: 5px;
+        padding: 0.5rem 0 1rem 0;
 
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        visibility: hidden;
+        pointer-events: none; 
+
+        
+
+    }
+
+    .menu.active{
+        opacity: 1;
+
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .leftnav{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+    }
+
+    .aks{
+        padding: 0.5rem 0;
     }
 
     .container{
@@ -1509,6 +1662,7 @@ div.interior p {
         padding: 0 15px;
         position: relative;
     }
+
     .heading{
         font-size: 1.9em;
     }
@@ -1520,12 +1674,19 @@ div.interior p {
     .hamburger{
         display: flex;
         align-items: center;
-        font-size: 1.7rem;
+        /* justify-content: center; */
+        font-size: 1.4rem;
+        cursor: pointer;
+        background-color: #ec1944;
+        color: white;
+        width: auto;
+        height: 34px;
+        padding: 0.5rem;
+        margin-top: 4px;
+        border-radius: 5px;
         position: absolute;
-        right: 2%;
-        top: 20%;
-
-
+        right: 0;
+    
     }
 
     .mode{
@@ -1535,6 +1696,7 @@ div.interior p {
         top: 20%;
         
     }
+
     .slide_contant p{
         color: white;
         font-size: 4rem;
