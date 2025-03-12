@@ -66,6 +66,7 @@ nav{
 .leftnav{
     display: flex;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 
 
@@ -2138,4 +2139,50 @@ div.interior p {
         bottom:-35%;
     }
 
+}
+
+/* about page */
+
+.about_banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.73),rgba(0, 0, 0,  0.73)),url(assets/spacejoy-PyeXkOVmG1Y-unsplash.jpg);
+    width: 100vw;
+    height: auto;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.about_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12rem 0 6rem 0;
+}
+
+.about_content h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+#home_toggle{
+    color: #ec1944;
+    font-weight: 500;
+    padding-right: 1rem;
+
+}
+
+.about_text{
+    color: white;
+
+}
+
+.about_text i{
+    color: white;
+    padding-right: 0.9rem;
+    
 }

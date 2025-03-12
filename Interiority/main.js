@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const heading = document.querySelector(".heading");
-    const mainContainer = document.querySelector(".main"); // Target scrolling element
+    const mainContainer = document.querySelector(".main");
     const moon = document.querySelector("#moon"); // Select the moon element
 
-    let moonClicked = false; // Track if moon is clicked
+    // Track if moon is clicked
+    let moonClicked = false; 
 
     // Toggle moonClicked on each click
     moon.addEventListener("click", function () {
@@ -43,7 +44,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             observer.unobserve(counter); // Stop observing once started
         }
     });
-}, { threshold: 0.5 }); // Trigger when 50% visible
+}, { threshold: 0.5 }); // starts at 50% vis
 
 // Attach observer to each counter element
 counts.forEach(counter => {
@@ -66,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const banner = document.querySelector('.banner_whyus') 
     const banner2 = document.querySelector('.our_gallary_section')
     const features= document.querySelector('.features')
+    const aboutToggle = document.getElementById("about_toggle")
     
 
     hamburger.addEventListener("click", function () {
@@ -93,5 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
         banner2.classList.toggle('dark')
         features.classList.toggle('dark')
     });
+
+    // about page toggle
+
+    aboutToggle.addEventListener("click", function(){
+        main.classList.toggle('ab_pg')
+    })
 });
 

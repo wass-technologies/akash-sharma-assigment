@@ -1,0 +1,39 @@
+.main.ab_pg .owl-carousel{
+    display: none;
+}
+
+.main.ab_pg .features_section{
+    display: none;
+}
+
+.main.ab_pg .why_us{
+    display: none;
+}
+
+.main.ab_pg .our_section{
+    display: none;
+}
+
+.main.ab_pg .our_gallary_section{
+    display: none;
+}
+
+.main.ab_pg .Unique_design{
+    display: none;
+}
+
+.main.ab_pg .testimonial_main{
+    display: none;
+}
+
+.main.ab_pg .our_updates_sections{
+    display: none;
+}
+
+.main.ab_pg .about_us{
+    display: block;
+}
+
+.about_us{
+    display: none;
+}
