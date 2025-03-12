@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     const heading = document.querySelector(".heading");
     const mainContainer = document.querySelector(".main");
-    const moon = document.querySelector("#moon"); // Select the moon element
+    const moon = document.querySelector("#moon"); 
 
-    // Track if moon is clicked
+    
     let moonClicked = false; 
 
-    // Toggle moonClicked on each click
+    
     moon.addEventListener("click", function () {
-        moonClicked = !moonClicked; // Toggle between true and false
+        moonClicked = !moonClicked; 
     });
 
     mainContainer.addEventListener("scroll", function () {

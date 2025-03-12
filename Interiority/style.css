@@ -512,6 +512,26 @@ nav{
     
 }
 
+/* about page */
+
+.ABOUT_INFO_images{
+    width:50%;
+    height: auto;
+    margin-left: 5rem;
+}
+
+.about_why_images{
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    
+}
+
+/* --- xx --- */
+
 .image1{
     grid-row: span 2;
     padding-bottom: 2rem;
@@ -1345,6 +1365,21 @@ div.interior p {
         width: 100%;
         padding: 4rem 0 1.3rem 0;
     }
+
+    /* about page */
+
+    .ABOUT_INFO_images{
+        width: 100%;
+        padding: 4rem 0 1.3rem 0;
+        margin-left: 0rem;
+    }
+
+    .about_why_images{
+        width: 100%;
+        padding: 4rem 0 1.3rem 0;
+    }
+
+    /* --- xx --- */
     
     .why_text p{
         left: 25%;
@@ -2144,7 +2179,7 @@ div.interior p {
 /* about page */
 
 .about_banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.73),rgba(0, 0, 0,  0.73)),url(assets/spacejoy-PyeXkOVmG1Y-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0,  0.8)),url(assets/about_image.jpg);
     width: 100vw;
     height: auto;
     position: relative;
@@ -2178,7 +2213,7 @@ div.interior p {
 
 .about_text{
     color: white;
-
+    font-weight: 500;
 }
 
 .about_text i{
@@ -2186,3 +2221,6 @@ div.interior p {
     padding-right: 0.9rem;
     
 }
+
+
+
