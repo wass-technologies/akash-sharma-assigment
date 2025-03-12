@@ -41,3 +41,11 @@
 .main.ab_pg .about_us .why_us{
     display: block;
 }
+
+.main.ab_pg .about{
+    color: #ec1944;
+}
+
+.main.ab_pg .home{
+    color: black;
+}

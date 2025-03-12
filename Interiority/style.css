@@ -73,6 +73,7 @@ nav{
 
 .home{
     padding: 0 12px;
+    color: #ec1944;
 }
 
 .home:hover{
@@ -2204,7 +2205,7 @@ div.interior p {
     margin-bottom: 1rem;
 }
 
-#home_toggle{
+.about_text #home_toggle{
     color: #ec1944;
     font-weight: 500;
     padding-right: 1rem;
@@ -2220,6 +2221,12 @@ div.interior p {
     color: white;
     padding-right: 0.9rem;
     
+}
+
+.about_text .home{
+    color:#ec1944 !important;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 

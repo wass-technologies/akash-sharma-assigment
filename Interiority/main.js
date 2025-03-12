@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const banner2 = document.querySelector('.our_gallary_section')
     const features= document.querySelector('.features')
     const aboutToggle = document.getElementById("about_toggle")
+    const homeToggle = document.querySelectorAll('.home') 
     
 
     hamburger.addEventListener("click", function () {
@@ -100,8 +101,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     aboutToggle.addEventListener("click", function(){
         main.classList.add('ab_pg');
-        aboutToggle.style.color = "#ec1944"; 
+        
         
     });
-});
 
+    homeToggle.forEach((homeBtn) => {
+        homeBtn.addEventListener("click", function () {
+            main.classList.remove("ab_pg");
+        });
+    });
+});

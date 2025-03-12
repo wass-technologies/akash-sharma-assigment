@@ -83,6 +83,14 @@ nav.dark{
     color: white;
 }
 
+.main.dark .leftnav .home{
+    color: #ec1944 !important;
+}
+
+.main.dark.ab_pg .leftnav .home{
+    color: white !important;
+}
+
 
 
 /* mobile view */
@@ -90,6 +98,10 @@ nav.dark{
 @media screen and (max-width: 741px) and (min-width: 250px){
     .leftnav.dark{
         color: black;
+    }
+
+    .main.dark.ab_pg .leftnav .home{
+        color: black !important;
     }
 
 }
