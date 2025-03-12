@@ -99,7 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // about page toggle
 
     aboutToggle.addEventListener("click", function(){
-        main.classList.toggle('ab_pg')
-    })
+        main.classList.add('ab_pg');
+        aboutToggle.style.color = "#ec1944"; 
+        
+    });
 });
 
