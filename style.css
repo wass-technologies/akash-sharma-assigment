@@ -2299,6 +2299,7 @@ div.interior p {
 .contact_form{
     background-color: #F5F1F2;
     padding: 60px;
+    border-radius: 0 10px 10px 0;
 }
 
 .contact_form form{
