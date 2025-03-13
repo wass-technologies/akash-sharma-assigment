@@ -91,6 +91,10 @@ nav.dark{
     color: white !important;
 }
 
+.main.dark.ct_pg .leftnav .home{
+    color: white !important;
+}
+
 
 
 /* mobile view */
@@ -101,6 +105,10 @@ nav.dark{
     }
 
     .main.dark.ab_pg .leftnav .home{
+        color: black !important;
+    }
+
+    .main.dark.ct_pg .leftnav .home{
         color: black !important;
     }
 

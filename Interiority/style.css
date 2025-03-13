@@ -10,7 +10,6 @@
 }
 
 .main{
-    font-family: poppins;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -2229,5 +2228,43 @@ div.interior p {
     cursor: pointer;
 }
 
+/* contact page */
 
+.hello_para {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
+.contact_us .features_text h3{
+    padding-bottom: 1rem;
+}
+
+.contact_us .features_text p::before{
+    content: "";
+    width: 50px;
+    height: 1px; 
+    background-color: #ec1944; 
+    position: absolute;
+    left: 41%; 
+    top: 65%;
+}
+
+.contact_box{
+    width: 100%;
+    
+}
+
+.contact_info{
+    background-color: #ec1944;
+    width: 40%;
+    padding: 8rem 3rem;
+    border-radius: 10px;
+}
+
+.contact_cards{
+    display: flex;
+    align-items: center;
+}

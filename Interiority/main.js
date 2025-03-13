@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const features= document.querySelector('.features')
     const aboutToggle = document.getElementById("about_toggle")
     const homeToggle = document.querySelectorAll('.home') 
+    const contactToggle = document.getElementById("contact_toggle")
     
 
     hamburger.addEventListener("click", function () {
@@ -101,13 +102,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     aboutToggle.addEventListener("click", function(){
         main.classList.add('ab_pg');
-        
-        
+        main.classList.remove("ct_pg");
+    
     });
+
+    //contact page toggle
+    contactToggle.addEventListener("click", function(){
+        main.classList.add('ct_pg');
+        main.classList.remove("ab_pg");
+    })
 
     homeToggle.forEach((homeBtn) => {
         homeBtn.addEventListener("click", function () {
             main.classList.remove("ab_pg");
+            main.classList.remove("ct_pg");
         });
     });
 });
