@@ -2339,3 +2339,34 @@ div.interior p {
     font-size: 1rem;
     font-weight: 600;
 }
+
+/* blog menu */
+
+.blog_menu{
+    position: absolute;
+    z-index: 2000;
+    top: 10%;
+    left: 30%;
+    display: none;
+}
+
+.dropdown{
+    background-color:white;
+    border: 0.5px solid #ddd;
+    padding: 20px;
+}
+
+.dropdown ul{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.dropdown ul li:hover{
+    color: #ec1944;
+    cursor: pointer;
+}
+
+
+.blog_menu.blog_pg{
+    display:flex;
+}
