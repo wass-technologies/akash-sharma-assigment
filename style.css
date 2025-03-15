@@ -1188,6 +1188,11 @@ div.interior p {
         pointer-events: none; 
     }
 
+    .search.dark{
+        color: black !important;
+    }
+    
+
     #cross{
         position: absolute;
         font-size: 2.5rem;
@@ -1720,7 +1725,6 @@ div.interior p {
     padding: 10px;
     width:auto;
     border-radius: 10px;
-    border: none;
     font-size: 0.8rem;
 }
 
@@ -2277,6 +2281,7 @@ div.interior p {
     font-size: 1rem;
     font-weight: 300;
     padding-bottom: 4rem;
+    color: black;
 }
 
 .contact_us .features_text h3{

@@ -26,23 +26,23 @@ nav.dark{
     background-color: #111111;
 }
 
-.features.dark .features_text h3{
+.main.dark .features_text h3{
     color: white;
 }
 
-.features.dark .features_cards h4{
+.main.dark .features_cards h4{
     color: white;
 }
 
-.features.dark .features_cards p{
+.main.dark .features_cards p{
     color: white;
 }
 
-.features.dark .features_cards a{
+.main.dark .features_cards a{
     color: white;
 }
 
-.features.dark .features_cards a:hover{
+.main.dark .features_cards a:hover{
     color:#ec1944;
 }
 
@@ -92,6 +92,10 @@ nav.dark{
 }
 
 .main.dark.ct_pg .leftnav .home{
+    color: white !important;
+}
+
+.main.dark.ct_pg .hello_para{
     color: white !important;
 }
 
