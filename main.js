@@ -72,6 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const contactToggle = document.getElementById("contact_toggle")
     const blogBtn =document.querySelector('.blog')
     const blogMenu =document.querySelector('.blog_menu')
+    const pageBtn =document.querySelector('.page')
+    const pageMenu =document.querySelector('.page_menu')
     
 
     hamburger.addEventListener("click", function () {
@@ -132,4 +134,14 @@ document.addEventListener("DOMContentLoaded", function () {
             blogMenu.classList.remove("blog_pg");
         }
     });
+
+    pageBtn.addEventListener("click" ,function(){
+        pageMenu.classList.toggle('page_pg');
+    });
+    // close page menu
+    document.addEventListener("click", function (event) {
+        if (!pageMenu.contains(event.target) && !pageBtn.contains(event.target)) {
+            pageMenu.classList.remove("page_pg");
+        }
+    })
 });

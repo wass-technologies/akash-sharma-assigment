@@ -2354,6 +2354,7 @@ div.interior p {
     background-color:white;
     border: 0.5px solid #ddd;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .dropdown ul{
@@ -2369,4 +2370,19 @@ div.interior p {
 
 .blog_menu.blog_pg{
     display:flex;
+}
+
+
+/* page drop menu */
+
+.page_menu{
+    position: absolute;
+    z-index: 2000;
+    top: 10%;
+    left: 40%;
+    display: none;
+}
+
+.page_menu.page_pg{
+    display: flex;
 }
