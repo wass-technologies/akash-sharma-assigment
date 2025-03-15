@@ -1684,6 +1684,46 @@ div.interior p {
     margin-bottom: 5px;
 }
 
+/* contact page */
+
+.features_text .hello_para {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.contact_us .features_text p::before{
+    display: none;
+}
+
+.contact_box{
+    flex-wrap: wrap;
+}
+.contact_box .contact_info{
+    width: 100%;
+    padding:0;
+    border-radius: 10px;
+}
+
+.contact_box .contact_form{
+    padding: 20px;
+    border-radius:10px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact_box .contact_form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_box .contact_form form input{
+    padding: 10px;
+    width:auto;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.8rem;
+}
+
 }
 
 /* for tab view */
