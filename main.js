@@ -87,8 +87,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("click", function (event) {
         if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
             navMenu.classList.remove("active");
+            cross.classList.remove("active");
+            line.classList.remove("active");   
         }
     });
+    
 
     //mode change
     moon.addEventListener("click", function () {
@@ -134,6 +137,8 @@ document.addEventListener("DOMContentLoaded", function () {
             blogMenu.classList.remove("blog_pg");
         }
     });
+
+     // page dropdown  visible
 
     pageBtn.addEventListener("click" ,function(){
         pageMenu.classList.toggle('page_pg');
