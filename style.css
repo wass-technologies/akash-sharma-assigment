@@ -208,6 +208,10 @@ nav{
     font-weight: 600;
 }
 
+.button_wrap a:hover{
+    color: white;
+}
+
 .button_wrap i{
     width: 2rem;
     height: 2rem;
@@ -215,8 +219,7 @@ nav{
     border-radius: 50%;
     background-color: white;
     margin: 0 10px;
-
-    
+    color: #ec1944;
 }
 
 /* owldots */
@@ -366,7 +369,7 @@ nav{
 }
 
 .features_cards:hover.sign_card .image{
-    background-color: white;
+    background-color: #F5F1F2;
 }
 .features_cards:hover.sign_card svg{
     fill: #ec1944;
@@ -1188,8 +1191,8 @@ div.interior p {
         pointer-events: none; 
     }
 
-    .search.dark{
-        color: black !important;
+    .search.dark i{
+        color: black;
     }
     
 

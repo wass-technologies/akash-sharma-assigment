@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const banner = document.querySelector('.banner_whyus') 
     const banner2 = document.querySelector('.our_gallary_section')
     const features= document.querySelector('.features')
-    const aboutToggle = document.getElementById("about_toggle")
+    const aboutToggle = document.querySelectorAll('.about')
     const homeToggle = document.querySelectorAll('.home') 
     const contactToggle = document.getElementById("contact_toggle")
     const blogBtn =document.querySelector('.blog')
@@ -107,10 +107,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // about page toggle
 
-    aboutToggle.addEventListener("click", function(){
-        main.classList.add('ab_pg');
-        main.classList.remove("ct_pg");
-    
+    aboutToggle.forEach((aboutBtn) => {
+        aboutBtn.addEventListener("click", function () {
+            main.classList.add('ab_pg');
+            main.classList.remove("ct_pg");
+        });
     });
 
     //contact page toggle
