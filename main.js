@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const blogMenu =document.querySelector('.blog_menu')
     const pageBtn =document.querySelector('.page')
     const pageMenu =document.querySelector('.page_menu')
+    const blogToggle = document.querySelectorAll('.blog_button') 
     
 
     hamburger.addEventListener("click", function () {
@@ -111,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
         aboutBtn.addEventListener("click", function () {
             main.classList.add('ab_pg');
             main.classList.remove("ct_pg");
+            main.classList.remove('blog_button');
         });
     });
 
@@ -118,12 +120,14 @@ document.addEventListener("DOMContentLoaded", function () {
     contactToggle.addEventListener("click", function(){
         main.classList.add('ct_pg');
         main.classList.remove("ab_pg");
+        main.classList.remove('blog_button');
     })
 
     homeToggle.forEach((homeBtn) => {
         homeBtn.addEventListener("click", function () {
             main.classList.remove("ab_pg");
             main.classList.remove("ct_pg");
+            main.classList.remove('blog_button');
         });
     });
 
@@ -150,4 +154,15 @@ document.addEventListener("DOMContentLoaded", function () {
             pageMenu.classList.remove("page_pg");
         }
     })
+
+    // blog page toggle
+
+    blogToggle.forEach((blogButton) => {
+        blogButton.addEventListener("click", function () {
+            main.classList.add('blog_button');
+            main.classList.remove("ct_pg");
+            main.classList.remove("ab_pg");
+        });
+    });
+
 });

@@ -2434,3 +2434,60 @@ div.interior p {
 .page_menu.page_pg{
     display: flex;
 }
+
+/* blog page */
+
+.blog_page{
+    width: 100%;
+    height: auto;
+}
+
+.blog_page .container_blog{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.blog_page .container_blog .our_updates{
+    margin: 6rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_page .container_blog .our_updates .our_updates_cards{
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.blog_page .container_blog .our_updates .our_updates_cards .our_upd{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0 ;
+    
+}
+
+.blog_page .container_blog .our_updates .our_updates_cards .our_upd img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog_page .container_blog .our_updates .our_updates_cards:hover img{
+    transform: scale(1.15); 
+}
+
+.our_uphead{
+    padding: 2rem 2rem;
+    border: 2px solid #ddd;
+    border-top: none;
+    border-radius: 0px 0px 8px 8px;
+    /* box-shadow: 0px 5px 12px  #ddd; */
+    height: auto;
+}
+
+.blog_page .container_blog .why_text{
+    margin: 3rem 0;
+}

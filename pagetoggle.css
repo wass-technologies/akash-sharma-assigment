@@ -109,3 +109,55 @@
 .main.ct_pg .home{
     color: black;
 }
+
+/* blog page */
+
+.blog_page{
+    display: none;
+}
+
+.main.blog_button .owl-carousel{
+    display: none;
+}
+
+.main.blog_button .features_section{
+    display: none;
+}
+
+.main.blog_button .why_us{
+    display: none;
+}
+
+.main.blog_button .our_section{
+    display: none;
+}
+
+.main.blog_button .our_gallary_section{
+    display: none;
+}
+
+.main.blog_button .Unique_design{
+    display: none;
+}
+
+.main.blog_button .testimonial_main{
+    display: none;
+}
+
+.main.blog_button .our_updates_sections{
+    display: none;
+}
+
+.main.blog_button .blog_page{
+    display: block;
+}
+
+.main.blog_button .blog{
+    color: #ec1944;
+}
+
+.main.blog_button .home{
+    color: black;
+}
+
+
