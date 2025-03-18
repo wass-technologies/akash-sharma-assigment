@@ -207,6 +207,10 @@
     display: block;
 }
 
+.main.page_button .services_page .our_updates_sections{
+    display: block;
+}
+
 .main.page_button .page{
     color: #ec1944;
 }

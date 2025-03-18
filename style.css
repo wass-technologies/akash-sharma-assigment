@@ -2500,3 +2500,55 @@ div.interior p {
     margin-left: 0;
 }
 
+.our_updates_cards.plan{
+    padding: 2rem 2rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.our_updates_cards.plan p{
+    background-color: #ec1944;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.our_updates_cards.plan .black_bg{
+    background-color:black;
+    padding: 0.8rem 0;
+    margin-bottom:0;
+}
+
+
+.our_updates_cards.plan h4{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #ec1944;
+}
+
+.our_updates_cards.plan h4 sub{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.our_updates_cards.plan ul{
+    list-style-type: none;
+    margin-bottom: 2rem;
+    line-height: 2.2rem;
+    font-size: 0.9rem;
+    font-weight:300;
+
+}
+
+.our_updates_cards.plan i{
+    color: #ec1944;
+    line-height: 2.2rem;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+
+}
