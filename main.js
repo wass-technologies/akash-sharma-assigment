@@ -74,7 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const blogMenu =document.querySelector('.blog_menu')
     const pageBtn =document.querySelector('.page')
     const pageMenu =document.querySelector('.page_menu')
-    const blogToggle = document.querySelectorAll('.blog_button') 
+    const blogToggle = document.querySelectorAll('.blog_button')
+    const pageToggle = document.querySelectorAll('.page_button')  
     
 
     hamburger.addEventListener("click", function () {
@@ -113,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
             main.classList.add('ab_pg');
             main.classList.remove("ct_pg");
             main.classList.remove('blog_button');
+            main.classList.remove('page_button');
         });
     });
 
@@ -121,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
         main.classList.add('ct_pg');
         main.classList.remove("ab_pg");
         main.classList.remove('blog_button');
+        main.classList.remove('page_button');
     })
 
     homeToggle.forEach((homeBtn) => {
@@ -128,15 +131,16 @@ document.addEventListener("DOMContentLoaded", function () {
             main.classList.remove("ab_pg");
             main.classList.remove("ct_pg");
             main.classList.remove('blog_button');
+            main.classList.remove('page_button');
         });
     });
 
-    // blog page visible
+    // blog dropdown visible
 
     blogBtn.addEventListener("click", function(){
         blogMenu.classList.toggle('blog_pg');
     });
-// close blog menu
+    // close blog menu
     document.addEventListener("click", function (event) {
         if (!blogMenu.contains(event.target) && !blogBtn.contains(event.target)) {
             blogMenu.classList.remove("blog_pg");
@@ -162,6 +166,17 @@ document.addEventListener("DOMContentLoaded", function () {
             main.classList.add('blog_button');
             main.classList.remove("ct_pg");
             main.classList.remove("ab_pg");
+            main.classList.remove('page_button');
+        });
+    });
+
+
+    pageToggle.forEach((pageButton) => {
+        pageButton.addEventListener("click", function () {
+            main.classList.add('page_button');
+            main.classList.remove("ct_pg");
+            main.classList.remove("ab_pg");
+            main.classList.remove('blog_button');
         });
     });
 

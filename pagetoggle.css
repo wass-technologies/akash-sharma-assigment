@@ -161,3 +161,54 @@
 }
 
 
+/* page */
+
+.services_page{
+    display: none;
+}
+
+.main.page_button .owl-carousel{
+    display: none;
+}
+
+.main.page_button .features_section{
+    display: none;
+}
+
+.main.page_button .why_us{
+    display: none;
+}
+
+.main.page_button .our_section{
+    display: none;
+}
+
+.main.page_button .our_gallary_section{
+    display: none;
+}
+
+.main.page_button .Unique_design{
+    display: none;
+}
+
+.main.page_button .testimonial_main{
+    display: none;
+}
+
+.main.page_button .our_updates_sections{
+    display: none;
+}
+
+.main.page_button .services_page{
+    display: block;
+}
+
+.main.page_button .page{
+    color: #ec1944;
+}
+
+.main.page_button .home{
+    color: black;
+}
+
+
