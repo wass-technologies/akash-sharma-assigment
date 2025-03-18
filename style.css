@@ -457,7 +457,6 @@ nav{
 
 .why_images{
     width: 50%;
-    
     height: auto;
 }
 
@@ -2491,3 +2490,13 @@ div.interior p {
 .blog_page .container_blog .why_text{
     margin: 3rem 0;
 }
+
+/* service page */
+
+.services_page #second2{
+    width:50%;
+    height: auto;
+    margin-right: 5rem;
+    margin-left: 0;
+}
+
