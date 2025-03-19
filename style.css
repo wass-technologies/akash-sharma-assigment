@@ -1305,13 +1305,15 @@ div.interior p {
     font-size: 1rem;
 }
 
-.contact_message{
+
+.contact_us .features_section .contact_message{
     padding: 20px;
     font-size: 1rem;
     border: none;
     border-radius: 10px;
     grid-column: 1 / span 2;
     width: auto !important;
+    background-color:white;
 }
 
 

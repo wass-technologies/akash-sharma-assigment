@@ -116,7 +116,22 @@ nav.dark{
     color: white !important;
 }
 
+.main.dark .features_section .contact_form{
+    background-color: #111111;
+}
 
+.main.dark .features_section .contact_form input{
+    background-color: #0a0a0a;
+}
+
+.main.dark .features_section .contact_message{
+    background-color: #0a0a0a!important; ;
+}
+
+.main.dark .features_section .icon_contact_info{
+    background-color: #0a0a0a;
+
+}
 
 
 /* mobile view */
