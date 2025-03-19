@@ -1473,7 +1473,7 @@ div.interior p {
 .our_updates_cards.plan h4 sub{
     font-size: 0.9rem;
     font-weight: 400;
-    color: #000000;
+    color: black;
 }
 
 .our_updates_cards.plan ul{
@@ -1485,7 +1485,7 @@ div.interior p {
 
 }
 
-.our_updates_cards.plan i{
+.blog_page .our_updates_cards.plan i{
     color: #ec1944;
     line-height: 2.2rem;
     font-size: 0.9rem;
@@ -2058,6 +2058,48 @@ div.interior p {
     width:auto;
     border-radius: 10px;
     font-size: 0.8rem;
+}
+
+/* blog page */
+
+.blog_page .container_blog{
+    width: 88%;
+    height: auto;
+    margin: auto;
+}
+
+.blog_page .container_blog .our_updates{
+    margin: 3rem 0;
+}
+
+.blog_page .container_blog .our_updates .our_updates_cards{
+    margin: 2rem 0;
+}
+
+.blog_menu .blog_button{
+    font-size: 0.9rem;
+}
+
+.blog_page .container_blog .our_updates .our_updates_cards {
+    width: 100%;
+    margin: 0.7rem 0;
+}
+
+/* service page */
+
+.our_updates_cards.plan li{
+    font-size: 0.7rem;
+}
+
+.services_page #second2 {
+    width:100%;
+    height: auto;
+}
+
+.our_updates_cards.plan{
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 }

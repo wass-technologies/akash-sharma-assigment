@@ -83,6 +83,15 @@ nav.dark{
     color: white;
 }
 
+.main.dark .services_page .our_updates_cards.plan ul li{
+    color: white;
+
+}
+
+.main.dark .our_updates_cards.plan h4 sub{
+    color: white;
+}
+
 .main.dark .leftnav .home{
     color: #ec1944 !important;
 }
