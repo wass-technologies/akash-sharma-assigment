@@ -1298,8 +1298,7 @@ div.interior p {
 }
 
 .contact_form input{
-    padding: 20px;
-    /* width:332px; */
+    padding: 20px;   
     border-radius: 10px;
     border: none;
     font-size: 1rem;
